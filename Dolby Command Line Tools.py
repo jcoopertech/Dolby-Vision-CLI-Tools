@@ -55,7 +55,7 @@ Option 4. Analyse a ProRes for HD10 Meta
 Option 5. Analyse a Full ProRes file""")
     
     try:
-        return int(input("Please choose [1/2/3/4] as a number only.: "))
+        return int(input("Please choose [1/2/3/4/5] as a number only.: "))
     except:
         print("\n\n\n!!! >> You entered an invalid response")
         raise
