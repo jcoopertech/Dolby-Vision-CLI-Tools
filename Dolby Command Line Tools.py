@@ -36,4 +36,7 @@ def option1():
 
 if __name__ == "__main__":
     menuOpt = Menu()
+    if menuOpt == 1:
+        option1()
+    
     
