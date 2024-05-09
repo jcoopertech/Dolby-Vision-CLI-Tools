@@ -23,23 +23,13 @@ Option 1. Validate XML""")
 
 def option1():
     userdirectory = str(input("Please enter complete directory path, including the final filename and extension: "))
-
-    #filename = str(input("Please enter filename complete with any file extension:\n")
-
-    """This line allows the filename alone to be entered as it's own argument to the DV command."""
-    #subprocess.check_output(['/usr/local/bin/dolby_vision_professional_tools/metafier', '-validate', userdirectory, filename])
-
-    print(['/usr/local/bin/dolby_vision_professional_tools/metafier', '-validate', userdirectory])
-    #subprocess.check_output(['/usr/local/bin/dolby_vision_professional_tools/metafier', '-validate', userdirectory])
     result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '-validate', userdirectory], stdout=subprocess.PIPE)
     result.stdout
-    input("Return to finish")
-    input("Hit enter to close console")#
-    
 
+    
 if __name__ == "__main__":
     menuOpt = Menu()
     if menuOpt == 1:
         option1()
-    
-    
+    input("Return to finish")
+    input("Hit enter to close console")#
