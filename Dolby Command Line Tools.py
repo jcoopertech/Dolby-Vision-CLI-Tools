@@ -26,7 +26,7 @@ def option1(userdirectory):
     result.stdout
 
 def option2(userdirectory):
-    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '--fix-dissolves', userdirectory], stdout.subprocess.PIPE)
+    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '--fix-dissolves', userdirectory], stdout=subprocess.PIPE)
     result.stdout
 
 def option3():
@@ -48,7 +48,9 @@ ______      _ _                       _____  _____   _____           _
 | |/ / (_) | | |_) | |_| | | | (_| | /\__/ /.___/ /   | | (_) | (_) | \__ \
 |___/ \___/|_|_.__/ \__, |  \ \__,_| \____/ \____/    \_/\___/ \___/|_|___/
                      __/ |   \____/                                        
-                    |___/                                                  """)
+                    |___/
+
+""")
 
 
 if __name__ == "__main__":
