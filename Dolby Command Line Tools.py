@@ -39,13 +39,12 @@ def option3():
     result.stdout
 
 def option4():
-    print("pls b patientz")
-    framerate = str(input("Please enter Frame Rate of ProRes file")
-    startframe = str(input("Please enter starting frame number")
-    endframe = str(input("Please enter end frame number")
-    aspectratio = str(input("Please enter Aspect Ratio")
-    in_file = str(input("Please enter ProRes File location")
-    xml_loc = str(input("Please enter output xml file location >> Do not include extension, but include filename")
+    framerate = str(input("Please enter Frame Rate of ProRes file"))
+    startframe = str(input("Please enter starting frame number"))
+    endframe = str(input("Please enter end frame number"))
+    aspectratio = str(input("Please enter Aspect Ratio"))
+    in_file = str(input("Please enter ProRes File location"))
+    xml_loc = str(input("Please enter output xml file location >> Do not include extension, but include filename"))
     fr_concat = startframe+"-"+endframe
     result = subprocess.run(['/usr/local/bin/cm_analyze', '-m 21 -r', framerate, '-f', fr_concat, '--source-format "u10 p422 lsb32rev le 422 ycbcr_bt2020 video pq bt2020" --aspect-ratios', \
                              aspectratio, '--bda', in_file, xml_loc+".xml"], stdout=subprocess.PIPE)
