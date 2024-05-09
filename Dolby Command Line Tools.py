@@ -35,7 +35,7 @@ def option3():
     old = str(input("Input file path of XML to upgrade to latest DV Meta Version: "))
     new = str(input("Input file name of updated XML (Don’t include .XML at the end): "))+".xml"
     print (new)
-    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '-o', new, '--save-version latest', old], stdout=subprocess.PIPE)
+    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '-o', new, '--save-version-latest', old], stdout=subprocess.PIPE)
     result.stdout
 
 def option4():
