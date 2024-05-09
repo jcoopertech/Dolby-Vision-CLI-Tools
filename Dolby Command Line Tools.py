@@ -46,7 +46,9 @@ def option4():
     in_file = str(input("Please enter ProRes File location"))
     xml_loc = str(input("Please enter output xml file location >> Do not include extension, but include filename"))
     fr_concat = startframe+"-"+endframe
-    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/cm_analyze', '-m 21 -r', framerate, '-f', fr_concat, '--source-format "u10 p422 lsb32rev le 422 ycbcr_bt2020 video pq bt2020" --aspect-ratios', \
+    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/cm_analyze', '-m' ,'21' ,'-r', framerate, '-f', fr_concat, '--source-format', "u10", "p422", "lsb32rev",\
+                             "le", "422", "ycbcr_bt2020", "video", "pq",\
+                             "bt2020", '--aspect-ratios', \
                              aspectratio, '--bda', in_file, xml_loc+".xml"], stdout=subprocess.PIPE)
     result.stdout
 
