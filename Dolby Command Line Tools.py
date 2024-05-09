@@ -56,7 +56,8 @@ ______      _ _                       _____  _____   _____           _
 if __name__ == "__main__":
     motd()
     menuOpt = Menu()
-    fil = str(input("Please enter complete directory path, including the final filename and extension: "))
+    if menuOpt == 1 or menuOpt == 2:
+        fil = str(input("Please enter complete directory path, including the final filename and extension: "))
 
     if menuOpt == 1:
         option1(fil)
