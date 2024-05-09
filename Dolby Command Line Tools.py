@@ -26,7 +26,7 @@ def option1(userdirectory):
     result.stdout
 
 def option2(userdirectory):
-    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '--fix-dissolves' userdirectory], stdout.subprocess.PIPE)
+    result = subprocess.run(['/usr/local/bin/dolby_vision_professional_tools/metafier', '--fix-dissolves', userdirectory], stdout.subprocess.PIPE)
     result.stdout
 
 def option3():
