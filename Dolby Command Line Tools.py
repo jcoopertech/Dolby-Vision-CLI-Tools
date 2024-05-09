@@ -65,6 +65,6 @@ if __name__ == "__main__":
     elif menuOpt == 3:
         option3()
     elif menuOpt == 4:
-        option4(fil)
+        option4()
     input("Return to finish")
     input("Hit enter to close console")#
