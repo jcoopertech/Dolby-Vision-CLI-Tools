@@ -8,6 +8,8 @@ def Menu():
 Dolby Vision Tools Lines
 Written by coding@jcooper.tech
 
+This software provides no checks for filenames being correct, and assumes that DV Tools will do this.
+
 
 Which option would you like:
 
