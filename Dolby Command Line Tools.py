@@ -63,7 +63,7 @@ if __name__ == "__main__":
     elif menuOpt == 2:
         option2(fil)
     elif menuOpt == 3:
-        option3(fil)
+        option3()
     elif menuOpt == 4:
         option4(fil)
     input("Return to finish")
